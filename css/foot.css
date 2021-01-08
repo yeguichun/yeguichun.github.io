@@ -1,0 +1,218 @@
+
+#foot .foot-top{
+    height: 79px;
+    border-bottom: 1px solid #e0e0e0;
+    /* line-height: 79px; */
+    padding: 27px 0;
+    box-sizing: border-box;
+}
+#foot .foot-top li {
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    text-align: center;    
+    border-left: 1px solid #e0e0e0;
+    font-size: 0;
+    line-height: 25px;
+    
+}
+#foot .foot-top li a{
+    font-size: 20px
+}
+#foot .foot-top li a span{
+    display: inline-block;
+    color: #616161;
+   font-size: 16px;
+   
+}
+#foot .foot-top li:nth-child(1){
+    border-left: none;
+}
+#foot .foot-top li:hover span, #foot .foot-top li:hover a{
+    color: #ff6700;
+}
+#foot .foot-links{
+     height: 267px; 
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+#foot .foot-links .foot-links-left{
+    float: left;
+}
+#foot .foot-links .foot-links-left .foot-links-dl{
+    width: 160px;
+    float: left;
+}
+#foot .foot-links .foot-links-left dt{
+    display: inline-block;
+    margin-bottom: 24px;
+}
+#foot .foot-links .foot-links-left dd{
+    line-height: 28px;
+    color: #757575;
+    font-size: 12px;
+}
+#foot .foot-links .foot-links-left dd:hover a{
+    color: #ff6700;
+}
+#foot .foot-links .foot-links-right{
+    float: right;
+    width: 251px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+#foot .foot-links .foot-links-right .foot-links-phone{
+    font-size: 22px;
+    color: #ff6700;
+}
+#foot .foot-links .foot-links-right .foot-links-time{
+    font-size: 12px;
+    margin: 0 0 5px 0;
+}
+.foot-links-right .foot-links-kefu{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ff6700;
+}
+.foot-links-right .foot-links-kefu i{
+    color: #ff6700;
+    font-size: 12px;
+}
+.foot-links-right .foot-links-kefu:hover{
+    background-color: #f25807;
+    border-color: #f25807;   
+}
+.foot-links-right .foot-links-kefu:hover i{
+    color: #ffffff;
+}
+.foot-links-right .foot-links-follow{
+    font-size: 12px;
+    margin-top: 10px;
+    position: relative;
+}
+.foot-links-right .foot-links-follow a{
+    width: 24px;
+    height: 24px; 
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+    margin-top: -3px;
+}
+.foot-links-right .foot-links-follow a i{
+    display: block;
+  font-size: 24px;
+  width: 24px;
+  height: 24px; 
+}
+.foot-links-follow .foot-links-img1{
+    display: inline-block;
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    top: 25px;
+    left: 100px;
+     display: none;    
+}
+.foot-links-follow .foot-links-img1 img{
+    width: 100%;
+    height: 100%;
+}
+.foot-links-follow a:hover i{
+   color: #ff6700;
+} 
+.foot-links-follow .foot-links-wx:hover:hover .foot-links-img1{
+    display: block;
+}
+#about{
+     height: 266px; 
+    padding: 30px 0;
+    background: #fafafa;
+    box-sizing: border-box;
+}
+.about-mi{
+    width: 57px;
+    height: 57px;
+    margin:0 10px 0 0;
+    background: #ff6700;
+    float: left;
+}
+.about-mi .about-mi-mi{
+    width: 57px;
+    height: 57px;
+     display: inline-block;
+     background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat center center;
+}
+.about-text{
+    font-size: 12px;
+    float: left;
+    line-height: 18px;
+}
+.about-text .about-text-one a{
+    position: relative;
+    display: inline-block;
+    margin-right:10px ;
+    
+}
+.about-text .about-text-one a:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 13px;
+    background-color:  #b0b0b0;
+    right: -6px;
+    top: 3px;
+
+}
+.about-text-two{
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 18px;     
+}
+.about-text-two a{
+    color: #b0b0b0;
+   vertical-align: top;
+    line-height: 18px;
+}
+.about-text a:hover {
+    color: #ff6700;
+}
+.about-copy{
+    height: 40px;
+    margin: 4px 0 15px;
+    padding-left: 67px; ; 
+}
+.about-copy a:not(:last-child){
+  display: inline-block;
+  width: 78px;
+  height: 28px;
+} 
+.about-copy-anquan{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.about-copy-anquan img{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105px;
+    height: 100%;
+    background: #ffffff;
+}
+.about-copy-anquan .about-copy-img1{
+    opacity: 1;
+}
+.about-slogan{
+    height: 19px;
+    margin: 30px auto 0;
+    text-indent: -9999px;
+    background: url(https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/slogan2020.png) no-repeat center 0;
+}

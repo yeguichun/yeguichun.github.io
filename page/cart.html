@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        .cart-none {
+            width: 400px;
+            height: 100px;
+            font-size: 50px;
+            margin: 100px auto;
+            display: none;
+        }
+
+        h1 {
+            width: 100px;
+            height: 30px;
+            color: red;
+            margin: 50px auto;
+            font-size: 20px;
+        }
+
+       
+        table
+        {
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center; 
+            display:none;
+        }
+        table td, table th
+        {
+            border: 1px solid #cad9ea;
+            color: #666;
+            text-align: center;
+        }
+        table thead th
+        {
+            background-color: #CCE8EB;
+            width: 200px;
+        }
+        table tr:nth-child(odd)
+        {
+            background: #fff;
+        }
+        table tr:nth-child(even)
+        {
+            background: #F5FAFA;
+        }
+
+
+        img {
+            display: block;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto;
+        }
+        .add,.cut{
+            cursor: pointer;
+        }
+        .clear{
+            margin-left: 1480px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-site  clearfix">
+            <div class="container">
+                <div class="header-site-left">
+                    <a href="#" class="site-left-mi"></a>
+                    <a href="../index.html" class="site-left-home"></a>
+                </div>
+                <h1>购物车页面</h1>
+            </div>
+        </div>
+    </div>
+    <div class="cart-none">没有更多商品了</div>
+     <table>
+        <thead>
+            <tr>
+                <th>产品</th>
+                <th>版本</th>
+                <th>图片</th>
+                <th>颜色</th>
+                <th>数量</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+           <td> </td>
+        </tfoot>
+    </table> 
+    <button class="clear">清空购物车</button>
+  
+    <script src="../js/detail.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+
+</html>

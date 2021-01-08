@@ -1,0 +1,99 @@
+body{
+    height: 100%;
+    color: #666666;
+    background: #f9f9f9;
+}
+#regist-wrap{
+    width: 854px;
+    height: 560px;
+    background-color: #ffffff;
+   
+    margin: 120px auto 0;
+}
+.regist-logo{
+    padding-bottom: 40px;
+    display: block;
+    text-align: center;
+}
+.regist-logo-mi{
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat center center #ff6700;
+}
+.regist-titel{
+    font-size: 30px;
+    color: #333333;
+    line-height: 30px;
+    text-align: center;
+}
+.regist-main{
+    width: 332px;
+    padding: 30px 0;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.regist-box1-phone{
+    line-height: 20px;
+}
+.regist-phone-titel{
+    padding-bottom: 5px;
+    color: #333;
+}
+.regist-phone-country{
+    width: 332px;
+    height: 42px;
+    line-height: 42px;
+    outline: none;
+    margin-bottom: 20px;
+
+}
+.regist-phone-titel1{
+    margin-top: -10px;
+    margin-bottom: 15px
+}
+.regist-box1-country input{
+    display: block;
+    width: 332px;
+    height: 42px;
+    line-height: 42px;
+    outline: none;
+    margin-bottom: 20px;
+    text-indent: 1.5em;
+}
+.regist-phone-btn{
+    width: 330px;
+    height: 42px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    background-color: #ff6700;
+    margin-top: 15px;
+    border: 1px solid rgba(186,186,186,.3);
+    color: #fff;
+    outline: none;
+}
+.regist-main-box2{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 0;
+}
+.regist-box2-msg{
+    text-align: center;
+    color: #9d9d9d;
+    padding: 10px 0;
+    font-size: 14px;
+    
+}
+.regist-box2-msg a{
+    color: #333333;
+}
+.regist-foot-area{
+    width: 854px;
+    text-align: center;
+    margin: 120px auto 0;
+}

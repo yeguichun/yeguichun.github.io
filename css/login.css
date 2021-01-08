@@ -1,0 +1,215 @@
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+
+.login-top-all {
+  width: 210px;
+  height: 98px;
+}
+
+.login-top-logo {
+  float: left;
+  margin-top: 25px;
+}
+
+.login-top-logo > .login-top-left {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url(http://s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat center center;
+  text-indent: -9999px;
+  background-color: #ff6700;
+}
+
+.login-top-text {
+  float: right;
+  width: 140px;
+  height: 98px;
+  margin-top: 23px;
+  font-size: 0;
+}
+
+.login-top-text > .login-text-rtop {
+  display: block;
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 30px;
+  color: #333333;
+}
+
+.login-top-text > .login-text-rbottom {
+  display: block;
+  width: 160px;
+  margin-top: 5px;
+  color: #b4b4b4;
+  font-size: 9px;
+}
+
+#login-banner {
+  height: 588px;
+  width: 100%;
+  position: relative;
+}
+
+#login-banner > .login-banner-a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/72644d9b8031286de3cc74e151aefd90.jpg) no-repeat center center;
+}
+
+#login-layout {
+  position: absolute;
+  width: 410px;
+  height: 556px;
+  bottom: 0px;
+  right: 386px;
+  background-color: #ffffff;
+}
+
+#login-layout .login-layout-top {
+  width: 410px;
+  height: 82px;
+  line-height: 82px;
+  text-align: center;
+  font-size: 23px;
+}
+
+#login-layout .login-layout-span1 {
+  display: inline-block;
+  margin: 0 35px 0 42px;
+}
+
+.login-layout-main {
+  width: 306px;
+}
+
+.login-layout-main > input {
+  margin-left: 30px;
+  width: 306px;
+  display: block;
+  height: 22px;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  border: 1px solid #d3d0d0c9;
+  outline: none;
+  margin-bottom: 14px;
+}
+
+.login-layout-main > .submit {
+  width: 344px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  background: #ff6700;
+  border: none;
+  margin: 10px 0 13px 30px;
+  outline: none;
+}
+
+.login-layout-id {
+  color: #ff6700;
+}
+
+.login-layout-phone {
+  width: 346px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.login-layout-phone > .login-phone-type {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 0 30px;
+  color: #ff6700;
+}
+
+.login-layout-phone .login-phone-now,
+.login-layout-phone .login-phone-forget,
+.login-layout-phone .login-phone-s1 {
+  color: #999999;
+}
+
+.login-phone-now:hover, .login-phone-forget:hover {
+  color: #ff6700;
+}
+
+.login-layout-other {
+  width: 318px;
+  padding-top: 143px;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+.login-layout-other a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 33px;
+}
+
+.login-layout-other a i {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-top: 6px;
+  color: #ffffff;
+}
+
+.login-layout-other .login-other-qq {
+  background-color: #4a4a91;
+}
+
+.login-layout-other .login-other-wb {
+  background-color: #f55252;
+}
+
+.login-layout-other .login-other-zfb {
+  background-color: skyblue;
+}
+
+.login-layout-other .login-other-wx {
+  background-color: #89af50;
+}
+
+.login-saoma-main {
+  width: 410px;
+  padding: 30px 0 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#login-foot {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#login-foot .login-foot-p1 {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+}
+
+#login-foot .login-foot-p1 a {
+  display: inline-block;
+  margin: 0 16px 0 10px;
+  color: #333333;
+}
+
+.login-foot-p2 {
+  margin-top: 10px;
+  height: 44px;
+  line-height: 44px;
+}
