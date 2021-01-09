@@ -67,8 +67,15 @@ $('.cut').click(function () {
     var productList = getShangping();
     var i= $(this).parent().parent('tr').index()
      productList[i].product_num=productList[i].product_num-1
-     productList.splice(i,1,productList[i])
-     setShangping(productList) 
+     if(productList[i].product_num<0){
+        productList[i].product_num=0
+        productList.splice(i,1,productList[i])
+        setShangping(productList) 
+     }else{
+        productList.splice(i,1,productList[i])
+        setShangping(productList) 
+     }
+    
      location.href="" 
 })
 
