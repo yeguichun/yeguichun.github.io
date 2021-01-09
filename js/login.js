@@ -49,7 +49,7 @@
       } else {
          alert("账号或者密码不符合规范")
       }
-}) */ 
+}) */
 
 function getXinxi() {
   var list = localStorage.getItem('xinxi') || "[]"; //字符串
@@ -65,30 +65,30 @@ $('.regist-box1-country .regist-phone-btn').click(function () {
   var respwd = new RegExp('\\w{5,}', 'i')
   var reskey = new RegExp('\^a-\w{4,}', 'i')
   // 取出json字符串 
-  var arr = []; var akey = []
-  for (var i = 0; i < localStorage.length; i++) {
-    var key = localStorage.key(i); //获取本地存储的Key
-    if (reskey.test(key)) {
-      akey.push(key);
-    }
-    for (var n = 0; n < akey.length; n++) {
-      key = akey[n]
-    }
-    var jsonstr = localStorage.getItem(key);
-
-    // 还原json对象 
-    var json = JSON.parse(jsonstr);
-    console.log(json);
-    // 取出json里面的username 
-    var username = json.phone;
-    arr.push(username)
-  }
-  for (var j = 0; j < arr.length; j++) {
-    if (arr[j] == $('.regist-phone-number').val()) {
-      alert('此账号已被注册')
-      return;
-    }
-  }
+  /*  var arr = []; var akey = []
+   for (var i = 0; i < localStorage.length; i++) {
+     var key = localStorage.key(i); //获取本地存储的Key
+     if (reskey.test(key)) {
+       akey.push(key);
+     }
+     for (var n = 0; n < akey.length; n++) {
+       key = akey[n]
+     }
+     var jsonstr = localStorage.getItem(key);
+ 
+     // 还原json对象 
+     var json = JSON.parse(jsonstr);
+     console.log(json);
+     // 取出json里面的username 
+     var username = json.phone;
+     arr.push(username)
+   } 
+   for (var j = 0; j < arr.length; j++) {
+     if (arr[j] == $('.regist-phone-number').val()) {
+       alert('此账号已被注册')
+       return;
+     }
+   }*/
   if (resname.test($('.regist-phone-number').val()) && respwd.test($('.regist-phone-password').val())) {
     var newProduct = {
       phone: $('.regist-phone-number').val(),
@@ -96,16 +96,33 @@ $('.regist-box1-country .regist-phone-btn').click(function () {
     };
     // 先获取原来的数组
     var productList = getXinxi();
-    // 把新信息添加进去
-    productList.push(newProduct);//
-    // 存回本地存储
-    setXinxi(productList)
-    alert('注册成功');
-    location.href="../page/Login.html"
+    
+    if (productList.length == 0) {
+      // 把新信息添加进去
+      productList.push(newProduct);//
+      // 存回本地存储
+      setXinxi(productList)
+      alert('注册成功');
+      location.href = "../page/Login.html"
+     
+    } else {
+      $.each(productList, function (index, product) {
+        if (product.phone == $('.regist-phone-number').val()) {
+          alert('此账号已被注册')
+        } else {
+          // 把新信息添加进去
+          productList.push(newProduct);//
+          // 存回本地存储
+          setXinxi(productList)
+          alert('注册成功');
+          location.href = "../page/Login.html"
+        }
+      })
+    }
   } else {
     alert("账号或者密码不符合规范")
- }
-  })
+  }
+})
 
 
 
@@ -116,9 +133,9 @@ $('.login-layout-main #login-button').click(function () {
   var arr_name = [];
   var arr_pwd = []
   var productList = getXinxi();
-  console.log(productList);
+//  console.log(productList);
   for (var i = 0; i < productList.length; i++) {
-    console.log(productList[i]);
+//    console.log(productList[i]);
     var login_name = productList[i].phone;
     arr_name.push(login_name)
     var login_pwd = productList[i].password;
@@ -126,23 +143,23 @@ $('.login-layout-main #login-button').click(function () {
   }
   for (var j = 0; j < arr_name.length; j++) {
     var flag = false
-  //  console.log(arr_name);
+    //  console.log(arr_name);
     if (logname == arr_name[j]) {
       flag = true;
       if (logpwd == arr_pwd[j]) {
         alert('登录成功')
         location.href = "../index.html";
         sessionStorage.setItem("logname", logname)
-       
+
 
       } else {
         alert('密码错误')
       }
-       if (!flag) {
+      if (!flag) {
         alert('账号不存在 ')
       }
     }
-   
+
   }
 
 })
@@ -198,7 +215,7 @@ setLogname()
 function setLogname() {
   var logname = $('#username').val()
   var hello = sessionStorage.getItem("logname");
-  console.log(hello);
+//  console.log(hello);
   if (hello != null) {
     $('.header-nav-right .header-right-login-btn').html("你好," + hello).css('color', '#ffffff')
   }
