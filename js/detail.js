@@ -193,6 +193,7 @@ $('#detail-jiaru .detail-jiaru-box .detail-jiaru-a1').click(function () {
   }
 
   }
+  location.href=''
 })
 
 /* var product_name=productList[i].product_val;

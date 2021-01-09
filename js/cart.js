@@ -67,9 +67,9 @@ $('.cut').click(function () {
     var productList = getShangping();
     var i= $(this).parent().parent('tr').index()
      productList[i].product_num=productList[i].product_num-1
-     if(productList[i].product_num<0){
+     if(productList[i].product_num<=0){
         productList[i].product_num=0
-        productList.splice(i,1,productList[i])
+        productList.splice(i,1)
         setShangping(productList) 
      }else{
         productList.splice(i,1,productList[i])
@@ -103,3 +103,15 @@ $('.clear').click(function () {
     localStorage.removeItem('shangping')
     location.href="" 
 });
+
+//更新购物车
+updateCar()
+function updateCar(){
+    var productList = getShangping();  
+    var sum=0
+    $.each(productList,function(index,product){
+        sum+=product.product_num
+        $('.gouwuche>a').html('购物车('+sum+')')
+
+    })
+}
