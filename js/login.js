@@ -106,19 +106,27 @@ $('.regist-box1-country .regist-phone-btn').click(function () {
       location.href = "../page/Login.html"
      
     } else {
-      $.each(productList, function (index, product) {
-        if (product.phone == $('.regist-phone-number').val()) {
+     
+    //  $.each(productList, function (index, product) {
+      for(var i=0;i<productList.length;i++){
+        flag=false
+        if (productList[i].phone == $('.regist-phone-number').val()) {
           alert('此账号已被注册')
+          return;
         } else {
-          // 把新信息添加进去
-          productList.push(newProduct);//
-          // 存回本地存储
-          setXinxi(productList)
-          alert('注册成功');
-          location.href = "../page/Login.html"
+          flag=true;
         }
-      })
+      }
+      if(flag){
+        // 把新信息添加进去
+        productList.push(newProduct);//
+        // 存回本地存储
+        setXinxi(productList)
+        alert('注册成功');
+        location.href = "../page/Login.html"
     }
+    }
+    
   } else {
     alert("账号或者密码不符合规范")
   }
@@ -142,7 +150,8 @@ $('.login-layout-main #login-button').click(function () {
     arr_pwd.push(login_pwd)
   }
   for (var j = 0; j < arr_name.length; j++) {
-    var flag = false
+    console.log(1);
+     flag = false
     //  console.log(arr_name);
     if (logname == arr_name[j]) {
       flag = true;
@@ -150,18 +159,18 @@ $('.login-layout-main #login-button').click(function () {
         alert('登录成功')
         location.href = "../index.html";
         sessionStorage.setItem("logname", logname)
-
+return
 
       } else {
         alert('密码错误')
       }
-      if (!flag) {
-        alert('账号不存在 ')
-      }
+     
     }
-
+   
   }
-
+  if (!flag) {
+    alert('账号不存在 ')
+  }
 })
 /* $('.login-layout-main #login-button').click(function () {
 
