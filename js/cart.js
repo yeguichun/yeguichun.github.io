@@ -107,6 +107,8 @@ $('.clear').click(function () {
 //更新购物车
 updateCar()
 function updateCar(){
+    var hello = sessionStorage.getItem("logname");
+    if(hello){
     var productList = getShangping();  
     var sum=0
     $.each(productList,function(index,product){
@@ -114,4 +116,5 @@ function updateCar(){
         $('.gouwuche>a').html('购物车('+sum+')')
 
     })
+}
 }
